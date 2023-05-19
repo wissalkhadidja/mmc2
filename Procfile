@@ -1,0 +1,1 @@
+web: gunicorn <wail_waste_management>.wsgi --log-file -

@@ -1,0 +1,101 @@
+/* Background and general style */
+
+body {
+    background-image: url("images/big.jpg");
+    font-family: Arial, sans-serif;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #136F63;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    position: relative
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+label {
+    color: #136F63;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid #136F63;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #2E7D32;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #1B5E20;
+}
+
+
+/* Animation for the form */
+
+form:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: url("https://images.unsplash.com/photo-1499872714546-0f6c0b2f9415");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
+form:hover:before {
+    transform: scale(1.1);
+}
+
+form:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #2E7D32;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+form:hover:after {
+    opacity: 0.8;
+    width: 150px;
+    height: 150px;
+    transition: all 0.4s ease-in-out;
+}

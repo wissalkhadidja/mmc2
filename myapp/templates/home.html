@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block head %} {% load static %} {% endblock %} {% block title %} Welcome {% endblock %} {% block content %}
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'signup' %}">Signup</a></li>
+        <li><a href="{% url 'service4' %}">About</a></li>
+    </ul>
+</nav>
+
+<h1><br><br><br>Welcome to Wail Waste Management<br><br> <br>مرحبًا بكم في إدارة نفايات وائل
+    <br><br><br>Bienvenue à Wail Waste Management
+</h1>
+{% endblock %}

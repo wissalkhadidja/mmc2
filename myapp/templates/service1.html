@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block title %}Service 1{% endblock %} {% block content %}
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/service1.css' %}">
+</head>
+<nav>
+    <ul>
+        <li>
+            <a>Service 1</a>
+        </li>
+    </ul>
+</nav>
+
+
+<form method="POST" target="">
+    {% csrf_token %}
+    <label for="message">Message:</label>
+    <select id="message" name="message">
+            <option value="">--Select an option--</option>
+            <option value="Question">Question</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Other">Other</option>
+        </select><br>
+    <label for="message">Position:</label>
+    <select id="position" name="position">
+                <option value="">--Select an position--</option>
+                <option value="Question">makkem echahid</option>
+                <option value="Feedback">rocher</option>
+                <option value="Complaint">sidi jilali</option>
+                <option value="Other">Other</option>
+            </select><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block head %} {% load static %} {% endblock %} {% block title %}Services{% endblock %} {% block content %}
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+</head>
+<nav class="nav-menu">
+    <ul>
+        <li>
+            <a>Nos services</a>
+        </li>
+        <li>
+            <a>خدماتنا</a>
+        </li>
+        <li>
+            <a>our services</a>
+        </li>
+    </ul>
+
+</nav>
+<div class="card-container">
+    <div class="card card1">
+        <a href="{% url 'service1' %}">
+            <br><br><br><br><br><br>
+            <h3>Service 1</h3>
+        </a>
+    </div>
+    <div class="card card2">
+        <br><br><br><br><br><br><br><br>
+        <a href="{% url 'service2' %}">
+            <h3>Service 2</h3>
+        </a>
+    </div>
+    <div class="card card3">
+        <br><br><br><br><br><br>
+        <a href="{% url 'service3' %}">
+            <h3>Service 3</h3>
+        </a>
+    </div>
+</div>
+
+
+{% endblock %}

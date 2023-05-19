@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block title %}Dashboard{% endblock %} {% block content %}
+<h1>Welcome to the dashboard, {{ user.username }}!</h1>
+
+<div class="bins">
+    <a href="{% url 'bin1' %}">
+        <div class="bin bin1">
+            <h2>Bin 1</h2>
+        </div>
+    </a>
+    <a href="{% url 'bin2' %}">
+        <div class="bin bin2">
+            <h2>Bin 2</h2>
+        </div>
+    </a>
+    <a href="{% url 'bin3' %}">
+        <div class="bin bin3">
+            <h2>Bin 3</h2>
+        </div>
+    </a>
+    <a href="{% url 'bin4' %}">
+        <div class="bin bin4">
+            <h2>Bin 4</h2>
+        </div>
+    </a>
+</div>
+{% endblock %}
